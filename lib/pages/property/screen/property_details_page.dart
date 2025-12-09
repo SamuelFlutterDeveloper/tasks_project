@@ -36,10 +36,10 @@ class _PropertyDetailsPageState extends State<PropertyDetailsPage> {
 
   @override
   void dispose() {
-    // Track page end
+    
     AnalyticsService.instance.trackPageEnd('property_details');
 
-    // Track property view end
+   
     AnalyticsService.instance.trackPropertyViewEnd(widget.property.id);
     super.dispose();
   }
@@ -54,7 +54,7 @@ class _PropertyDetailsPageState extends State<PropertyDetailsPage> {
       backgroundColor: Colors.white,
       body: CustomScrollView(
         slivers: [
-          // App Bar with Image Gallery
+       
           SliverAppBar(
             expandedHeight: isWeb
                 ? 450
